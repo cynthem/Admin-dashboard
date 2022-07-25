@@ -292,3 +292,10 @@ button {
     align-items: center;
     background-color: #ffe9c4;
 }
+
+.b1-icon,
+.b2-icon,
+.b3-icon,
+.b4-icon {
+    width: 50px;
+}
