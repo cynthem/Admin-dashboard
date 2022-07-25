@@ -1,0 +1,35 @@
+/* Top level grid & styles */
+
+html {
+    height: 100vh;
+}
+
+.container {
+    background-color: gray;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    height: 99vh;
+}
+
+.dashboard {
+    background-color: blue;
+    grid-row: span 2;
+}
+
+.header {
+    background-color: white;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+
+
+/* 1-Dashboard */
+
+/* 2-Header */
+
+/* 3-Main */
+
+/* 3A-Projects */
+
+/* 3B-Announcements */
