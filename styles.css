@@ -257,6 +257,8 @@ button {
 .projects-grid {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat (2, 1fr);
+    border-left: 6px solid #faab17;
+    border-radius: 5px;
 }
 
 .projects-grid > div {
