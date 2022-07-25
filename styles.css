@@ -1,35 +1,114 @@
-/* Top level grid & styles */
-
-html {
+body {
+    background-color: #f095b4;
+    color: #161616;
+    padding: 0;
+    margin: 0;
     height: 100vh;
 }
 
+
+/* Top level grid & styles */
+
 .container {
-    background-color: gray;
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
-    height: 99vh;
+    grid-template: repeat(6, 1fr) / repeat(6, 1fr);
+    height: 100vh;
 }
 
 .dashboard {
-    background-color: blue;
-    grid-row: span 2;
+    grid-column: span 1;
+    grid-row: span 6;
 }
 
 .header {
-    background-color: white;
-    grid-column: span 2;
+    grid-column: span 5;
     grid-row: span 1;
 }
 
 
-
 /* 1-Dashboard */
+
+.dashboard {
+    background-color: #f15e2e;
+    color: #e9d5b3;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.dashboard > div {
+    display: flex;
+    align-items: center;
+}
+
+
 
 /* 2-Header */
 
+.header {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #e9d5b3;
+}
+
+.header > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search,
+.info,
+.user,
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
 /* 3-Main */
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
 /* 3A-Projects */
 
+.projects {
+    grid-column: span 2;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat (2, 1fr);
+}
+
+.projects-grid > div {
+    display: flex;
+    flex-direction: column;
+    background-color: #e9d5b3;
+}
+
+.p1-icons,
+.p2-icons,
+.p3-icons,
+.p4-icons,
+.p5-icons,
+.p6-icons {
+    display: flex;
+}
+
 /* 3B-Announcements */
+
+.announcements {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.announce-box {
+    background-color: #e9d5b3;
+}
+
+.trending-box > div {
+    display: flex;
+    align-items: center;
+    background-color: #e9d5b3;
+}
