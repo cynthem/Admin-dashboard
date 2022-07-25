@@ -67,13 +67,15 @@
 body {
     background-color: #f095b4;
     color: #161616;
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: 0.01em;
     padding: 0;
     margin: 0;
     height: 100vh;
 }
 
 
-/* Top level grid & styles */
+/* Top level grid & font styles */
 
 .container {
     display: grid;
@@ -89,6 +91,106 @@ body {
 .header {
     grid-column: span 5;
     grid-row: span 1;
+}
+
+.title-name,
+.fullname,
+.p1-title,
+.p2-title,
+.p3-title,
+.p4-title,
+.p5-title,
+.p6-title {
+    font-family: 'Chicle', serif;
+    letter-spacing: 0.05em;
+}
+
+.greeting,
+.projects-title,
+.announce-title,
+.b1-title,
+.b2-title,
+.b3-title,
+.trending-title {
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.projects-title,
+.announce-title,
+.trending-title {
+    font-size: 18px;
+}
+
+.title-name {
+    font-size: 30px;
+}
+
+.info-name {
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.fullname {
+    font-size: 28px;
+}
+
+span {
+    font-size: 24px;
+}
+
+.home-name,
+.profile-name,
+.messages-name,
+.history-name,
+.tasks-name,
+.communities-name,
+.settings-name,
+.support-name,
+.privacy-name {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.p1-title,
+.p2-title,
+.p3-title,
+.p4-title,
+.p5-title,
+.p6-title {
+    font-size: 20px;
+}
+
+.p1-text,
+.p2-text,
+.p3-text,
+.p4-text,
+.p5-text,
+.p6-text {
+    font-size: 15px;
+    color: #4f4f4f;
+}
+
+.b1-title,
+.b2-title,
+.b3-title,
+.trending-box {
+    font-size: 14px;
+}
+
+.b1-text,
+.b2-text,
+.b3-text {
+    font-size: 12px;
+    color: #4f4f4f;
+}
+
+.b1-description,
+.b2-description,
+.b3-description,
+.b4-description {
+    color: #4f4f4f;
 }
 
 
@@ -127,6 +229,16 @@ body {
 .buttons {
     display: flex;
     align-items: center;
+}
+
+button {
+    background-color: #161616;
+    color: #faab17;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    border: none;
+    outline: none;
 }
 
 /* 3-Main */
