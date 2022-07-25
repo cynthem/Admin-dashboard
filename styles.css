@@ -301,12 +301,19 @@ button {
 .p5-content,
 .p6-content {
     display: flex;
+    gap: 10px;
 }
 
 .p1-image,
 .p2-image,
-.p3-image {
+.p3-image,
+.p4-image,
+.p5-image {
     width: 100px;
+}
+
+.p6-image {
+    width: 90px;
 }
 
 .p1-icons,
