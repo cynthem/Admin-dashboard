@@ -276,6 +276,10 @@ button {
     display: flex;
 }
 
+.p1-image {
+    width: 100px;
+}
+
 /* 3B-Announcements */
 
 .announcements {
