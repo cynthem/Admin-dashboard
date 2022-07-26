@@ -388,6 +388,7 @@ button {
     padding: 20px 25px 25px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .announce-box {
@@ -401,6 +402,11 @@ button {
 .trending-box > div {
     display: flex;
     align-items: center;
+    gap: 15px;
+}
+
+.trending-box {
+    gap: 25px;
 }
 
 .b1-icon,
