@@ -169,6 +169,7 @@ body {
     font-size: 20px;
     letter-spacing: 0.02em;
     color: #161616;
+    padding-bottom: 10px;
 }
 
 .p1-title:hover,
@@ -189,6 +190,7 @@ body {
     font-size: 14px;
     color: #4f4f4f;
     cursor: default;
+    padding: 0 20px 0 15px;
 }
 
 .b1-title,
@@ -446,17 +448,21 @@ button:active {
     gap: 10px;
 }
 
-.p1-image,
 .p2-image,
-.p3-image,
-.p4-image,
-.p6-image {
+.p4-image {
     width: 100px;
     border-radius: 5px;
 }
 
+.p1-image,
+.p3-image,
+.p6-image {
+    width: 90px;
+    border-radius: 5px;
+}
+
 .p5-image {
-    width: 85px;
+    width: 75px;
     border-radius: 5px;
 }
 
@@ -485,7 +491,7 @@ button:active {
 .announcements {
     grid-column: span 1;
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 48% 52%;
 }
 
 .announce-box,
