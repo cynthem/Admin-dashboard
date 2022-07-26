@@ -335,6 +335,19 @@ span:hover {
     width: 60px;
 }
 
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.user-icon:hover {
+    animation: spin 500ms ease-out;
+}
+
 .buttons {
     gap: 25px;
 }
