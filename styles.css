@@ -260,11 +260,12 @@ span {
 }
 
 input {
-    border: 2px solid #ffe5b7;
+    border: none;
     border-radius: 15px;
     background-color: white;
     width: 400px;
-    height: 28px;
+    height: 26px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .info {
@@ -310,13 +311,19 @@ button {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding: 20px 10px;
+    padding: 25px 20px;
 }
 
 /* 3A-Projects */
 
 .projects {
     grid-column: span 3;
+}
+
+.projects-title,
+.announce-title,
+.trending-title {
+    padding-bottom: 10px;
 }
 
 .projects-grid {
@@ -370,17 +377,30 @@ button {
 .announcements {
     grid-column: span 1;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 40% 40%;
+}
+
+.announce-box,
+.trending-box {
+    background-color: #ffe9c4;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px 25px 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .announce-box {
-    background-color: #ffe9c4;
+    padding-top: 25px;
+}
+
+.announce-box > div {
+    border-bottom: 1px solid #a2a2a2;
 }
 
 .trending-box > div {
     display: flex;
     align-items: center;
-    background-color: #ffe9c4;
 }
 
 .b1-icon,
