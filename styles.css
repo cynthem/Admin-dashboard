@@ -141,7 +141,7 @@ body {
     font-size: 30px;
 }
 
-span {
+.fullname > a {
     font-size: 24px;
 }
 
@@ -171,6 +171,15 @@ span {
     color: #161616;
 }
 
+.p1-title:hover,
+.p2-title:hover,
+.p3-title:hover,
+.p4-title:hover,
+.p5-title:hover,
+.p6-title:hover {
+    color: purple;
+}
+
 .p1-text,
 .p2-text,
 .p3-text,
@@ -198,6 +207,13 @@ span {
 .b4-handle {
     color: black;
     cursor: default;
+}
+
+.b1-handle:hover,
+.b2-handle:hover,
+.b3-handle:hover,
+.b4-handle:hover {
+    cursor: pointer;
 }
 
 .b1-text,
@@ -311,7 +327,8 @@ input {
     }
 }
 
-.info-icon:hover {
+.info-icon:hover,
+.b1-icon:hover {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
 }
@@ -344,7 +361,9 @@ span:hover {
     }
 }
 
-.user-icon:hover {
+.user-icon:hover,
+.info-image:hover,
+.b2-icon:hover {
     animation: spin 500ms ease-out;
 }
 
@@ -441,6 +460,15 @@ button:active {
     border-radius: 5px;
 }
 
+.p1-image:hover,
+.p2-image:hover,
+.p3-image:hover,
+.p4-image:hover,
+.p5-image:hover,
+.p6-image:hover {
+    transform: scale(1.05);
+}
+
 .p1-icons,
 .p2-icons,
 .p3-icons,
@@ -479,6 +507,22 @@ button:active {
 .box-2 {
     border-bottom: 1px solid #a2a2a2;
     padding-bottom: 10px;
+}
+
+.b3-icon {
+    transition: all 500ms ease-out;
+}
+
+.b3-icon:hover {
+    transform: scale(1.3);
+}
+
+.b4-icon {
+    transition: all 500ms ease-out;
+}
+
+.b4-icon:hover {
+    transform: scale(0.7);
 }
 
 .b1-text,
