@@ -184,6 +184,16 @@ span {
     font-size: 14px;
 }
 
+.b1-title,
+.b2-title,
+.b3-title,
+.b1-handle,
+.b2-handle,
+.b3-handle,
+.b4-handle {
+    color: black;
+}
+
 .b1-text,
 .b2-text,
 .b3-text {
@@ -195,7 +205,7 @@ span {
 .b2-description,
 .b3-description,
 .b4-description {
-    color: #4f4f4f;
+    color: #606060;
 }
 
 
@@ -377,7 +387,7 @@ button {
 .announcements {
     grid-column: span 1;
     display: grid;
-    grid-template-rows: 40% 40%;
+    grid-template-rows: 55% 45%;
 }
 
 .announce-box,
@@ -388,15 +398,23 @@ button {
     padding: 20px 25px 25px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .announce-box {
     padding-top: 25px;
 }
 
-.announce-box > div {
+.box-1,
+.box-2 {
     border-bottom: 1px solid #a2a2a2;
+    padding-bottom: 10px;
+}
+
+.b1-text,
+.b2-text,
+.b3-text {
+    padding-top: 1px;
 }
 
 .trending-box > div {
