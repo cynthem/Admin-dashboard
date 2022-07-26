@@ -345,10 +345,12 @@ button {
 .projects-grid > div {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: #ffe9c4;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
     border-left: 8px solid #faab17;
     border-radius: 10px;
+    padding: 25px 20px;
 }
 
 .p1-content,
