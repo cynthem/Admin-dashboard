@@ -129,6 +129,7 @@ body {
 
 .title-name {
     font-size: 35px;
+    color: #ffe9c4;
 }
 
 .info-name {
@@ -156,6 +157,7 @@ span {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.02em;
+    color: #ffe9c4;
 }
 
 .p1-title,
@@ -176,6 +178,7 @@ span {
 .p6-text {
     font-size: 14px;
     color: #4f4f4f;
+    cursor: default;
 }
 
 .b1-title,
@@ -193,6 +196,7 @@ span {
 .b3-handle,
 .b4-handle {
     color: black;
+    cursor: default;
 }
 
 .b1-text,
@@ -200,6 +204,7 @@ span {
 .b3-text {
     font-size: 12px;
     color: #4f4f4f;
+    cursor: default;
 }
 
 .b1-description,
@@ -207,6 +212,7 @@ span {
 .b3-description,
 .b4-description {
     color: #606060;
+    cursor: default;
 }
 
 
@@ -272,11 +278,13 @@ span {
 
 input {
     border: none;
+    outline: none;
     border-radius: 15px;
     background-color: white;
     width: 400px;
     height: 26px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    padding: 0 10px; 
 }
 
 .info {
@@ -287,8 +295,35 @@ input {
     width: 20px;
 }
 
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-2px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+      transform: translate3d(-2px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(2px, 0, 0);
+    }
+}
+
+.info-icon:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+}
+
 .info-image {
     width: 40px;
+}
+
+.info-name:hover,
+.greeting:hover,
+.fullname:hover,
+span:hover {
+    cursor: default;
 }
 
 .bottom {
@@ -316,6 +351,18 @@ button {
     width: 90px;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: rgb(70, 29, 0);
+}
+
+button:active {
+    background-color: rgb(108, 45, 0);
+    -webkit-box-shadow: inset 2px 3px 8px rgb(42, 18, 0);
+    -moz-box-shadow: inset 2px 3px 8px rgba(42, 18, 0);
+    box-shadow: inset 2px 3px 8px rgba(42, 18, 0);
+}
+
 /* 3-Main */
 
 .main {
@@ -335,6 +382,7 @@ button {
 .announce-title,
 .trending-title {
     padding-bottom: 10px;
+    cursor: default;
 }
 
 .projects-grid {
