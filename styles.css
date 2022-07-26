@@ -168,6 +168,7 @@ span {
 .p6-title {
     font-size: 20px;
     letter-spacing: 0.02em;
+    color: #161616;
 }
 
 .p1-text,
@@ -443,7 +444,7 @@ button:active {
 .announcements {
     grid-column: span 1;
     display: grid;
-    grid-template-rows: 55% 45%;
+    grid-template-rows: 50% 50%;
 }
 
 .announce-box,
