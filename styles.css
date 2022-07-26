@@ -71,7 +71,7 @@ body {
     letter-spacing: 0.01em;
     padding: 0;
     margin: 0;
-    height: 100vh;
+    height: 100%
 }
 
 
@@ -80,7 +80,7 @@ body {
 .container {
     display: grid;
     grid-template: repeat(6, 1fr) / repeat(6, 1fr);
-    height: 100vh;
+    height: 100%;
 }
 
 .dashboard {
@@ -137,7 +137,7 @@ body {
 }
 
 .fullname {
-    font-size: 28px;
+    font-size: 30px;
 }
 
 span {
@@ -239,13 +239,15 @@ span {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     background-color: #ffe9c4;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3%;
+    padding-left: 3%;
+    padding-right: 5%;
 }
 
 .search,
@@ -257,22 +259,49 @@ span {
     gap: 20px;
 }
 
+input {
+    border: 2px solid #ffe5b7;
+    border-radius: 15px;
+    background-color: white;
+    width: 400px;
+    height: 28px;
+}
+
+.info {
+    gap: 25px;
+}
+
+.info-icon {
+    width: 20px;
+}
+
 .info-image {
     width: 40px;
+}
+
+.bottom {
+    padding-bottom: 1.5%;
 }
 
 .user-icon {
     width: 60px;
 }
 
+.buttons {
+    gap: 25px;
+}
+
 button {
     background-color: #161616;
-    color: #faab17;
+    color: #ffc75e;
     font-family: 'PT Sans', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 0.02em;
     border: none;
     outline: none;
+    padding: 8px 0;
+    border-radius: 20px;
+    width: 90px;
 }
 
 /* 3-Main */
@@ -280,6 +309,8 @@ button {
 .main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 10px;
 }
 
 /* 3A-Projects */
@@ -291,14 +322,16 @@ button {
 .projects-grid {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-    border-left: 6px solid #faab17;
-    border-radius: 5px;
+    gap: 20px;
 }
 
 .projects-grid > div {
     display: flex;
     flex-direction: column;
     background-color: #ffe9c4;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+    border-left: 8px solid #faab17;
+    border-radius: 10px;
 }
 
 .p1-content,
