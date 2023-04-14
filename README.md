@@ -1,7 +1,7 @@
 # Admin-dashboard
 > A dashboard page that demonstrates use of the CSS grid and acts as a portfolio with links to my project repos (Sydney Phillips is a pseudonym). This project was completed as part of The Odin Project's Full Stack Javascript curriculum.
 
-Live demo [_here_](https://doozles411.github.io/Admin-dashboard/)
+Live demo [_here_](https://cynthem.github.io/Admin-dashboard/)
 
 ## Room for Improvement
 To do:
